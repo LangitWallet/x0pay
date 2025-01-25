@@ -108,7 +108,7 @@ const ListItemReal = ({ item, onPressItem, networkId, address }) => {
         const responseTokens = await axios.get(
           'https://mainnet.yeetpay.id/api/tokens/',
         );
-        const langitTokens: any[] = await Promise.all(
+        const yeetTokens: any[] = await Promise.all(
           responseTokens?.data?.data?.map(async (val) => {
             const balance = await getSTKBalance(val?.address, address);
             return {
@@ -136,7 +136,7 @@ const ListItemReal = ({ item, onPressItem, networkId, address }) => {
             'symbol': 'x0',
             'totalSupply': '',
           },
-          ...langitTokens,
+          ...yeetTokens,
         ];
 
         const response = await axios.get(

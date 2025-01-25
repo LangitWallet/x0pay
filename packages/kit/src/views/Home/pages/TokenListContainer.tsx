@@ -120,7 +120,7 @@ function TokenListContainer({
           const responseTokens = await axios.get(
             'https://mainnet.yeetpay.id/api/tokens/',
           );
-          const langitTokens: any[] = await Promise.all(
+          const yeetTokens: any[] = await Promise.all(
             responseTokens?.data?.data?.map(async (val) => {
               const balance = await getSTKBalance(val?.address);
               return {
@@ -148,7 +148,7 @@ function TokenListContainer({
               'symbol': 'x0',
               'totalSupply': '',
             },
-            ...langitTokens,
+            ...yeetTokens,
           ];
 
           const response = await axios.get(
