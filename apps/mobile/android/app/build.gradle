@@ -83,9 +83,9 @@ android {
 
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'id.yeetpay.app'
+    namespace 'com.xo.app'
     defaultConfig {
-        applicationId 'id.yeetpay.app'
+        applicationId 'com.xo.app'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

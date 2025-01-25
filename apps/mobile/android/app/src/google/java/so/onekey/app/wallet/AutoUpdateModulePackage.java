@@ -1,4 +1,4 @@
-package id.yeetpay.app;
+package com.xo.app;
 
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
