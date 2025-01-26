@@ -83,9 +83,9 @@ android {
 
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.xo.app'
+    namespace 'id.yeetpay.app'
     defaultConfig {
-        applicationId 'com.xo.app'
+        applicationId 'id.yeetpay.app'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -104,11 +104,11 @@ android {
     }
     buildTypes {
         debug {
-            resValue "string", "app_name", "x0 Dev"
+            resValue "string", "app_name", "Yeet!"
             signingConfig signingConfigs.debug
         }
         release {
-            resValue "string", "app_name", "x0"
+            resValue "string", "app_name", "Yeet!"
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
             signingConfig signingConfigs.debug
