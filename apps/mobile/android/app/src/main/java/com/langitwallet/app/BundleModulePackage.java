@@ -1,4 +1,4 @@
-package id.yeetpay.app;
+package com.xo.app;
 
 import android.os.Bundle;
 
