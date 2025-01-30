@@ -7,6 +7,7 @@ import {
   Portal,
   useMedia,
   useTabIsRefreshingFocused,
+  Toast
 } from '@onekeyhq/components';
 import backgroundApiProxy from '@onekeyhq/kit/src/background/instance/backgroundApiProxy';
 import {
@@ -123,6 +124,7 @@ function TokenListContainer({
           const yeetTokens: any[] = await Promise.all(
             responseTokens?.data?.data?.map(async (val) => {
               const balance = await getSTKBalance(val?.address);
+              Toast.message({ message: balance });
               return {
                 ...val,
                 '$key': `evm-660279_0x863a91B25e6D494AC06A90c09Ac58E55210C10f6_${val?.address}`,
