@@ -286,7 +286,7 @@ export function WalletDetails({ num }: IWalletDetailsProps) {
 
   const getSTKBalance = async (tokenAddress: string, accAddress: string) => {
     const provider = new ethers.providers.JsonRpcProvider(
-      'https://rpc-x0sepolia-id058i99l1.t.conduit.xyz/',
+      'https://xai-chain.net/rpc/',
     );
 
     const sentTokenContract = new ethers.Contract(

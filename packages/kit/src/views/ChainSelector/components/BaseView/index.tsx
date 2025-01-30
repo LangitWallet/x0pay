@@ -53,7 +53,7 @@ const ListItemReal = ({ item, onPressItem, networkId, address }) => {
 
   const getSTKBalance = async (tokenAddress: string, accAddress: string) => {
     const provider = new ethers.providers.JsonRpcProvider(
-      'https://rpc-x0sepolia-id058i99l1.t.conduit.xyz/',
+      'https://xai-chain.net/rpc/',
     );
 
     const sentTokenContract = new ethers.Contract(
@@ -73,7 +73,7 @@ const ListItemReal = ({ item, onPressItem, networkId, address }) => {
     setLoading(true);
 
     let r = {};
-    if (item?.chainId !== '170845') {
+    if (item?.chainId !== '660279') {
       try {
         const blockedTokens =
           await backgroundApiProxy.serviceToken.getBlockedTokens({
@@ -100,7 +100,7 @@ const ListItemReal = ({ item, onPressItem, networkId, address }) => {
     } else {
       try {
         const provider = new ethers.providers.JsonRpcProvider(
-          'https://rpc-x0sepolia-id058i99l1.t.conduit.xyz/',
+          'https://xai-chain.net/rpc/',
         );
         const balance = await provider.getBalance(address);
         const stringBalance = ethers.utils.formatEther(balance);
@@ -113,7 +113,7 @@ const ListItemReal = ({ item, onPressItem, networkId, address }) => {
             const balance = await getSTKBalance(val?.address, address);
             return {
               ...val,
-              '$key': `evm-170845_0x42e19b59fa5632c01b87666a400a002a695251d2_${val?.address}`,
+              '$key': `evm-660279_0x863a91B25e6D494AC06A90c09Ac58E55210C10f6_${val?.address}`,
               'logoURI':
                 val.symbol === 'USDT'
                   ? 'https://seeklogo.com/images/T/tether-usdt-logo-FA55C7F397-seeklogo.com.png'
@@ -126,7 +126,7 @@ const ListItemReal = ({ item, onPressItem, networkId, address }) => {
         let tokens = [
           {
             '$key':
-              'evm--170845_0x42e19b59fa5632c01b87666a400a002a695251d2_0x0000000000000000000000000000000000000000',
+              'evm--660279_0x863a91B25e6D494AC06A90c09Ac58E55210C10f6_0x0000000000000000000000000000000000000000',
             'address': '0x0000000000000000000000000000000000000000',
             'decimals': 6,
             'isNative': false,

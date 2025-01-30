@@ -35,9 +35,9 @@ export const dangerAllNetworkRepresent: IServerNetwork = {
 
 export const getPresetNetworks = memoFn((): IServerNetwork[] => {
   const x0 = {
-    'chainId': '170845',
+    'chainId': '660279',
     'code': 'x0',
-    'id': 'evm--170845',
+    'id': 'evm--660279',
     'logoURI': 'https://x0pay.com/images/logo-primary.png',
     'name': 'x0 Network',
     'shortcode': 'x0',

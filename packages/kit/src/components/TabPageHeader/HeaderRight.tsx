@@ -72,7 +72,7 @@ export function HeaderRight({
           address: result?.data,
           token: {
             '$key':
-              'evm--170845_0x42e19b59fa5632c01b87666a400a002a695251d2_0x0000000000000000000000000000000000000000',
+              'evm--660279_0x863a91B25e6D494AC06A90c09Ac58E55210C10f6_0x0000000000000000000000000000000000000000',
             'address': '0x0000000000000000000000000000000000000000',
             'decimals': 6,
             'isNative': false,

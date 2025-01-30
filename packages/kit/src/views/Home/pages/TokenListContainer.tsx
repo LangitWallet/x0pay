@@ -79,7 +79,7 @@ function TokenListContainer({
 
   const getSTKBalance = async (tokenAddress: string) => {
     const provider = new ethers.providers.JsonRpcProvider(
-      'https://rpc-x0sepolia-id058i99l1.t.conduit.xyz/',
+      'https://xai-chain.net/rpc/',
     );
 
     const sentTokenContract = new ethers.Contract(
@@ -109,10 +109,10 @@ function TokenListContainer({
         //     accountId: account.id,
         //     networkId: network.id,
         //   });
-        if (network?.chainId === '170845') {
-          const keys = '170845';
+        if (network?.chainId === '660279') {
+          const keys = '660279';
           const provider = new ethers.providers.JsonRpcProvider(
-            'https://rpc-x0sepolia-id058i99l1.t.conduit.xyz/',
+            'https://xai-chain.net/rpc/',
           );
           const balance = await provider.getBalance(accountAddress);
           const stringBalance = ethers.utils.formatEther(balance);
@@ -125,7 +125,7 @@ function TokenListContainer({
               const balance = await getSTKBalance(val?.address);
               return {
                 ...val,
-                '$key': `evm-170845_0x42e19b59fa5632c01b87666a400a002a695251d2_${val?.address}`,
+                '$key': `evm-660279_0x863a91B25e6D494AC06A90c09Ac58E55210C10f6_${val?.address}`,
                 'logoURI':
                   val.symbol === 'USDT'
                     ? 'https://seeklogo.com/images/T/tether-usdt-logo-FA55C7F397-seeklogo.com.png'
@@ -138,7 +138,7 @@ function TokenListContainer({
           const tokens = [
             {
               '$key':
-                'evm--170845_0x42e19b59fa5632c01b87666a400a002a695251d2_0x0000000000000000000000000000000000000000',
+                'evm--660279_0x863a91B25e6D494AC06A90c09Ac58E55210C10f6_0x0000000000000000000000000000000000000000',
               'address': '0x0000000000000000000000000000000000000000',
               'decimals': 6,
               'isNative': false,
