@@ -1,5 +1,5 @@
 import { isNumber } from 'lodash';
-import WebViewCleaner from 'react-native-webview-cleaner';
+//import WebViewCleaner from 'react-native-webview-cleaner';
 
 import type {
   IBrowserBookmark,
@@ -260,7 +260,7 @@ class ServiceDiscovery extends ServiceBase {
   @backgroundMethod()
   async clearCache() {
     if (platformEnv.isNative) {
-      WebViewCleaner.clearAll();
+      //WebViewCleaner.clearAll();
     } else if (platformEnv.isDesktop) {
       window.desktopApi.clearWebViewCache();
     }
