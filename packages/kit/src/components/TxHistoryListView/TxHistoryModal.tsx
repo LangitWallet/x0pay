@@ -15,8 +15,8 @@ export default function TxHistoryModal(props: IProps) {
   const [modalVisible, setModalVisible] = useState(false);
 
   const renderIcon = (symbol: string) => {
-    if (symbol === 'x0') {
-      return 'https://x0pay.com/images/logo-primary.png';
+    if (symbol === 'XAI') {
+      return 'https://x0pay.com/images/yeetlogo.png';
     } else if (symbol === 'Tether USD') {
       return 'https://seeklogo.com/images/T/tether-usdt-logo-FA55C7F397-seeklogo.com.png';
     } else {

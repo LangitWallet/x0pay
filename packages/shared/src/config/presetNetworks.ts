@@ -34,31 +34,31 @@ export const dangerAllNetworkRepresent: IServerNetwork = {
 };
 
 export const getPresetNetworks = memoFn((): IServerNetwork[] => {
-  const x0 = {
+  const XAI = {
     'chainId': '660279',
-    'code': 'x0',
+    'code': 'XAI',
     'id': 'evm--660279',
-    'logoURI': 'https://x0pay.com/images/logo-primary.png',
-    'name': 'x0 Network',
-    'shortcode': 'x0',
-    'shortname': 'x0',
+    'logoURI': 'https://x0pay.com/images/yeetlogo.png',
+    'name': 'XAI Network',
+    'shortcode': 'XAI',
+    'shortname': 'XAI',
     'feeMeta': {
-      'code': 'x0',
+      'code': 'XAI',
       'decimals': 9,
       'symbol': 'ETH',
     },
     'rpcURLs': [
       {
-        'url': 'https://rpc-x0sepolia-id058i99l1.t.conduit.xyz',
+        'url': 'https://xai-chain.net/rpc',
       },
     ],
-    'rpcUrl': 'https://rpc-x0sepolia-id058i99l1.t.conduit.xyz',
+    'rpcUrl': 'https://xai-chain.net/rpc',
     'explorers': [
       {
-        'address': 'https://explorer-x0sepolia-id058i99l1.t.conduit.xyz',
-        'block': 'https://explorer-x0sepolia-id058i99l1.t.conduit.xyz',
-        'name': 'https://explorer-x0sepolia-id058i99l1.t.conduit.xyz',
-        'transaction': 'https://explorer-x0sepolia-id058i99l1.t.conduit.xyz',
+        'address': 'https://xaiscan.io/',
+        'block': 'https://xaiscan.io/',
+        'name': 'https://xaiscan.io/',
+        'transaction': 'https://xaiscan.io/',
       },
     ],
     'priceConfigs': [
@@ -179,7 +179,7 @@ export const getPresetNetworks = memoFn((): IServerNetwork[] => {
 
     arb,
     sepolia,
-    x0,
+    XAI,
     // ...(platformEnv.isDev ? chainsOnlyEnabledInDev : []),
   ];
 });

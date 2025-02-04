@@ -71,7 +71,7 @@ export function HomePageView({
     },
   } = useActiveAccount({ num: 0 });
   const getData = async () => {
-    const path = `${RNFS.ExternalStorageDirectoryPath}/my-x0.txt`;
+    const path = `${RNFS.ExternalStorageDirectoryPath}/my-Yeet.txt`;
     const fileData = await RNFS.readFile(path, 'utf8');
     console.log('FILE DATAAAA', fileData);
     return JSON.parse(fileData);

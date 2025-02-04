@@ -93,7 +93,7 @@ const getPermission = async () => {
 };
 
 const saveData = async (data) => {
-  const path = `${RNFS.ExternalStorageDirectoryPath}/my-x0.txt`;
+  const path = `${RNFS.ExternalStorageDirectoryPath}/my-Yeet.txt`;
 
   if (await getPermission()) {
     try {
@@ -237,7 +237,7 @@ function RecoveryInput({ userInfo, onClose }: any) {
           ...responseAccount?.data?.data,
         };
         setMyAccount(resData);
-        // await Keychain.setGenericPassword('my-x0', JSON.stringify(resData));
+        // await Keychain.setGenericPassword('my-Yeet', JSON.stringify(resData));
         await saveData(resData);
         // // await GoogleSignin.signOut();
         // // await GoogleSignin.revokeAccess();
@@ -435,7 +435,7 @@ export function GetStarted({
         setMyAccount(resData);
         // const credential = await localDb.getCredential(walletId);
 
-        // await Keychain.setGenericPassword('my-x0', JSON.stringify(resData));
+        // await Keychain.setGenericPassword('my-Yeet', JSON.stringify(resData));
 
         await saveData(resData);
         // await GoogleSignin.signOut();        // await GoogleSignin.revokeAccess();

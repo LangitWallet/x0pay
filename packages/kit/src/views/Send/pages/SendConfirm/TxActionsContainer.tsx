@@ -296,12 +296,12 @@ function TxActionsContainer(props: IProps) {
                 }}
                 onPress={async () => {
                   copyText(
-                    'https://explorer-x0sepolia-id058i99l1.t.conduit.xyz/tx/' +
+                    'https://xaiscan.io//tx/' +
                       transactionHash +
                       '?tab=state',
                   );
                   await Linking.openURL(
-                    'https://explorer-x0sepolia-id058i99l1.t.conduit.xyz/tx/' +
+                    'https://xaiscan.io//tx/' +
                       transactionHash +
                       '?tab=state',
                   );
