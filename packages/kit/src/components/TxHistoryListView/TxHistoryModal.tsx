@@ -16,7 +16,7 @@ export default function TxHistoryModal(props: IProps) {
 
   const renderIcon = (symbol: string) => {
     if (symbol === 'XAI') {
-      return 'https://x0pay.com/images/yeetlogo.png';
+      return 'https://x0pay.com/images/xai.png';
     } else if (symbol === 'Tether USD') {
       return 'https://seeklogo.com/images/T/tether-usdt-logo-FA55C7F397-seeklogo.com.png';
     } else {

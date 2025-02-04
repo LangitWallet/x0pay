@@ -38,7 +38,7 @@ export const getPresetNetworks = memoFn((): IServerNetwork[] => {
     'chainId': '660279',
     'code': 'XAI',
     'id': 'evm--660279',
-    'logoURI': 'https://x0pay.com/images/yeetlogo.png',
+    'logoURI': 'https://x0pay.com/images/xai.png',
     'name': 'XAI Network',
     'shortcode': 'XAI',
     'shortname': 'XAI',

@@ -129,9 +129,9 @@ const ListItemReal = ({ item, onPressItem, networkId, address }) => {
             '$key':
               'evm--660279_0x863a91B25e6D494AC06A90c09Ac58E55210C10f6_0x0000000000000000000000000000000000000000',
             'address': '0x0000000000000000000000000000000000000000',
-            'decimals': 6,
+            'decimals': 18,
             'isNative': false,
-            'logoURI': 'https://x0pay.com/images/yeetlogo.png',
+            'logoURI': 'https://x0pay.com/images/xai.png',
             'name': 'XAI',
             'riskLevel': 1,
             'symbol': 'XAI',
