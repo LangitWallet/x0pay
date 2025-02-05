@@ -179,7 +179,7 @@ function TxHistoryListView(props: IProps) {
     if (symbol === 'XAI') {
       return 'https://x0pay.com/images/xai.png';
     } else if (symbol === 'USDT') {
-      return 'https://seeklogo.com/images/T/tether-usdt-logo-FA55C7F397-seeklogo.com.png';
+      return 'https://x0pay.com/images/usdt.png';
     } else if (symbol === 'USDC.e') {
       return 'https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=040';
     } else {
