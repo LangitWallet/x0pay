@@ -160,7 +160,7 @@ function WalletActionPay() {
   );
 }
 
-function WalletActionSwap({ networkId }: { networkId?: string }) {
+function WalletActionBuy({ networkId }: { networkId?: string }) {
   const navigation =
     useAppNavigation<IPageNavigationProp<IModalSwapParamList>>();
 
@@ -228,7 +228,7 @@ function WalletActions({ ...rest }: IXStackProps) {
 
   return (
     <RawActions {...rest}>
-      <WalletActionSwap networkId={network?.id} />
+      <WalletActionBuy networkId={network?.id} />
       <ReviewControl>
         <WalletActionBuy networkId={network?.id} accountId={account?.id} />
       </ReviewControl>
