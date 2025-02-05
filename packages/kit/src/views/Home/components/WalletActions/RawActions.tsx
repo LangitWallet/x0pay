@@ -67,7 +67,7 @@ function ActionItem({
   );
 }
 
-function ActionTopup(props: IActionItemsProps) {
+function ActionBuy(props: IActionItemsProps) {
   const intl = useIntl();
   return (
     <ActionItem label={'Topup'} icon="PlusLargeOutline" {...props} />
@@ -119,7 +119,7 @@ function ActionReceive(props: IActionItemsProps) {
   );
 }
 
-function ActionBuy(props: IActionItemsProps) {
+function ActionSwap(props: IActionItemsProps) {
   const intl = useIntl();
   return <ActionItem label={'Buy'} icon="SwitchHorOutline" {...props} />;
 }
@@ -167,11 +167,11 @@ function RawActions({ children, ...rest }: IXStackProps) {
 
 RawActions.Withdraw = ActionWithdraw;
 RawActions.More = ActionMore;
-RawActions.Topup = ActionTopup;
+RawActions.Buy = ActionBuy;
 RawActions.Sell = ActionSell;
 RawActions.Send = ActionSend;
 RawActions.Receive = ActionReceive;
-RawActions.Buy = ActionBuy;
+RawActions.Swap = ActionSwap;
 RawActions.Pay = ActionPay;
 
 export { RawActions, ActionItem };
