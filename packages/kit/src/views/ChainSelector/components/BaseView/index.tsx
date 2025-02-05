@@ -111,18 +111,18 @@ const ListItemReal = ({ item, onPressItem, networkId, address }) => {
         const yeetTokens: any[] = await Promise.all(
           responseTokens?.data?.data?.map(async (val) => {
             const balance = await getSTKBalance(val?.address, address);
-            Toast.message({ message: val.symbol });
+            let logoURI = 'https://x0pay.com/images/yeetlogogray.png';
+            if (val.symbol === 'USDT') {
+              logoURI ='https://seeklogo.com/images/T/tether-usdt-logo-FA55C7F397-seeklogo.com.png';
+            } else if (val.symbol === 'USDC') {
+              logoURI = 'https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=040';
+            } else { //native
+              logoURI ='https://x0pay.com/images/xai.png';
+            }
             return {
               ...val,
-              '$key': `evm-660279_0x863a91B25e6D494AC06A90c09Ac58E55210C10f6_${val?.address}`,
-              'logoURI':
-                val.symbol === 'USDT'
-                  ? 'https://seeklogo.com/images/T/tether-usdt-logo-FA55C7F397-seeklogo.com.png'
-                  : (val.symbol === 'USDC'
-                    ? 'https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=040'
-                    : ( val.symbol === 'XAI'
-                      ? 'https://x0pay.com/images/xai.png'
-                      : 'https://x0pay.com/images/yeetlogogray.png')),
+              '$key': `evm-660279_${address}_${val?.address}`,
+              'logoURI': logoURI,
               balance: balance,
             };
           }),
