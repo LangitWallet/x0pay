@@ -55,10 +55,10 @@ const xai = {
   'rpcUrl': 'https://xai-chain.net/rpc',
   'explorers': [
     {
-      'address': 'https://xaiscan.io/',
-      'block': 'https://xaiscan.io/',
+      'address': 'https://xaiscan.io/address/{address}',
+      'block': 'https://xaiscan.io/block/{block}',
       'name': 'https://xaiscan.io/',
-      'transaction': 'https://xaiscan.io/',
+      'transaction': 'https://xaiscan.io/tx/{transaction}',
     },
   ],
   'priceConfigs': [

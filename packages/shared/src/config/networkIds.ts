@@ -55,7 +55,7 @@ export type INetworkShortCode =
   | 'mantle'
   | 'mantapacific'
   | 'fevm'
-  | 'XAI';
+  | 'xai';
 
 const checkErrors: string[] = [];
 // TODO generate getNetworkIdsMap in build time
