@@ -178,10 +178,12 @@ function TxHistoryListView(props: IProps) {
   const renderIcon = (symbol: string) => {
     if (symbol === 'XAI') {
       return 'https://x0pay.com/images/xai.png';
-    } else if (symbol === 'Tether USD') {
+    } else if (symbol === 'USDT') {
       return 'https://seeklogo.com/images/T/tether-usdt-logo-FA55C7F397-seeklogo.com.png';
+    } else if (symbol === 'USDC') {
+      return 'https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=040';
     } else {
-      return 'https://uni.onekey-asset.com/static/chain/eth.png';
+      return 'https://x0pay.com/images/yeetlogogray.png';
     }
   };
 

@@ -118,7 +118,11 @@ const ListItemReal = ({ item, onPressItem, networkId, address }) => {
               'logoURI':
                 val.symbol === 'USDT'
                   ? 'https://seeklogo.com/images/T/tether-usdt-logo-FA55C7F397-seeklogo.com.png'
-                  : 'https://uni.onekey-asset.com/static/chain/eth.png',
+                  : (val.symbol === 'USDC'
+                    ? 'https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=040'
+                    : ( val.symbol === 'XAI'
+                      ? 'https://x0pay.com/images/xai.png'
+                      : 'https://x0pay.com/images/yeetlogogray.png')),
               balance: balance,
             };
           }),

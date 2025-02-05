@@ -19,10 +19,10 @@ import HomeSelector from '../components/HomeSelector';
 import useHomePageWidth from '../hooks/useHomePageWidth';
 
 import { HomeHeaderContainer } from './HomeHeaderContainer';
-import { NFTListContainerWithProvider } from './NFTListContainer';
+// import { NFTListContainerWithProvider } from './NFTListContainer';
 import { TokenListContainerWithProvider } from './TokenListContainer';
 import { TxHistoryListContainerWithProvider } from './TxHistoryContainer';
-import WalletContentWithAuth from './WalletContentWithAuth';
+// import WalletContentWithAuth from './WalletContentWithAuth';
 import { useAtom } from 'jotai';
 import { myAccountAtom } from '../../../states/jotai/myAccountAtom';
 import * as Keychain from 'react-native-keychain';
@@ -113,14 +113,14 @@ export function HomePageView({
           }),
           page: memo(TokenListContainerWithProvider, () => true),
         },
-        isNFTEnabled
-          ? {
-              title: intl.formatMessage({
-                id: ETranslations.global_nft,
-              }),
-              page: memo(NFTListContainerWithProvider, () => true),
-            }
-          : null,
+        // isNFTEnabled
+        //   ? {
+        //       title: intl.formatMessage({
+        //         id: ETranslations.global_nft,
+        //       }),
+        //       page: memo(NFTListContainerWithProvider, () => true),
+        //     }
+        //   : null,
         // {
         //   title: 'Defi',
         //   page: memo(DefiListContainer, () => true),
@@ -190,16 +190,16 @@ export function HomePageView({
       );
     }
 
-    if (isRequiredValidation) {
-      return (
-        <WalletContentWithAuth
-          networkId={network?.id ?? ''}
-          accountId={account?.id ?? ''}
-        >
-          <>{renderTabs()}</>
-        </WalletContentWithAuth>
-      );
-    }
+    // if (isRequiredValidation) {
+    //   return (
+    //     <WalletContentWithAuth
+    //       networkId={network?.id ?? ''}
+    //       accountId={account?.id ?? ''}
+    //     >
+    //       <>{renderTabs()}</>
+    //     </WalletContentWithAuth>
+    //   );
+    // }
 
     return <>{renderTabs()}</>;
   }, [
