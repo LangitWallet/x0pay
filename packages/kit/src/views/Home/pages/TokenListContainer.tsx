@@ -127,7 +127,7 @@ function TokenListContainer({
               let logoURI = 'https://x0pay.com/images/yeetlogogray.png';
               if (val.symbol === 'USDT') {
                 logoURI ='https://seeklogo.com/images/T/tether-usdt-logo-FA55C7F397-seeklogo.com.png';
-              } else if (val.symbol === 'USDC') {
+              } else if (val.symbol === 'USDC.e') {
                 logoURI = 'https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=040';
               } else { //native
                 logoURI ='https://x0pay.com/images/xai.png';

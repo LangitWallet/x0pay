@@ -19,7 +19,7 @@ export default function TxHistoryModal(props: IProps) {
       return 'https://x0pay.com/images/xai.png';
     } else if (symbol === 'USDT') {
       return 'https://seeklogo.com/images/T/tether-usdt-logo-FA55C7F397-seeklogo.com.png';
-    } else if (symbol === 'USDC') {
+    } else if (symbol === 'USDC.e') {
       return 'https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=040';
     } else {
       return 'https://x0pay.com/images/yeetlogogray.png';
