@@ -111,7 +111,7 @@ const ListItemReal = ({ item, onPressItem, networkId, address }) => {
         const yeetTokens: any[] = await Promise.all(
           responseTokens?.data?.data?.map(async (val) => {
             const balance = await getSTKBalance(val?.address, address);
-            Toast.message({ message: balance });
+            Toast.message({ message: val.symbol });
             return {
               ...val,
               '$key': `evm-660279_0x863a91B25e6D494AC06A90c09Ac58E55210C10f6_${val?.address}`,
