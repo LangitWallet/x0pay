@@ -130,36 +130,36 @@ const arbitrum: IServerNetwork = {
   'createdAt': '2023-05-31T00:29:24.951Z',
   'updatedAt': '2023-05-31T00:29:24.951Z',
 };
-const ethereum: IServerNetwork = {
-  'impl': 'evm',
-  'chainId': '1',
-  'id': 'evm--1',
-  'name': 'Ethereum',
-  'symbol': 'ETH',
-  'code': 'eth',
-  'shortcode': 'eth',
-  'shortname': 'ETH',
-  'decimals': 18,
-  'feeMeta': {
-    'code': 'eth',
-    'decimals': 9,
-    'symbol': 'Gwei',
-  },
-  'status': ENetworkStatus.LISTED,
-  'isTestnet': false,
-  'extensions': {
-    'position': 3,
-    'isTokenSupported': true,
-    'isNFTEnabled': true,
-  },
-  'logoURI': 'https://uni.onekey-asset.com/static/chain/eth.png',
-  'defaultEnabled': true,
-  balance2FeeDecimals: 0,
-  priceConfigs: [],
-  explorers: [],
-  createdAt: '',
-  updatedAt: ''
-};
+// const ethereum: IServerNetwork = {
+//   'impl': 'evm',
+//   'chainId': '1',
+//   'id': 'evm--1',
+//   'name': 'Ethereum',
+//   'symbol': 'ETH',
+//   'code': 'eth',
+//   'shortcode': 'eth',
+//   'shortname': 'ETH',
+//   'decimals': 18,
+//   'feeMeta': {
+//     'code': 'eth',
+//     'decimals': 9,
+//     'symbol': 'Gwei',
+//   },
+//   'status': ENetworkStatus.LISTED,
+//   'isTestnet': false,
+//   'extensions': {
+//     'position': 3,
+//     'isTokenSupported': true,
+//     'isNFTEnabled': true,
+//   },
+//   'logoURI': 'https://uni.onekey-asset.com/static/chain/eth.png',
+//   'defaultEnabled': true,
+//   balance2FeeDecimals: 0,
+//   priceConfigs: [],
+//   explorers: [],
+//   createdAt: '',
+//   updatedAt: ''
+// };
 const bsc: IServerNetwork = {
   'impl': 'evm',
   'chainId': '56',
@@ -316,7 +316,6 @@ const sol: IServerNetwork = {
     // btc & btc fork
     xai,
     arbitrum,
-    ethereum,
     bsc,
     polygon,
     avalanche,
