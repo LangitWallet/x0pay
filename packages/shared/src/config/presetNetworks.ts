@@ -35,51 +35,41 @@ export const dangerAllNetworkRepresent: IServerNetwork = {
 
 export const getPresetNetworks = memoFn((): IServerNetwork[] => {
 const xai = {
-  'chainId': '660279',
-  'code': 'XAI',
-  'id': 'evm--660279',
-  'logoURI': 'https://x0pay.com/images/xai.png',
-  'name': 'XAI Network',
-  'shortcode': 'XAI',
-  'shortname': 'XAI',
-  'feeMeta': {
-    'code': 'XAI',
-    'decimals': 9,
-    'symbol': 'ETH',
-  },
-  'rpcURLs': [
-    {
-      'url': 'https://xai-chain.net/rpc',
-    },
-  ],
-  'rpcUrl': 'https://xai-chain.net/rpc',
-  'explorers': [
-    {
-      'address': 'https://xaiscan.io/address/{address}',
-      'block': 'https://xaiscan.io/block/{block}',
-      'name': 'https://xaiscan.io/',
-      'transaction': 'https://xaiscan.io/tx/{transaction}',
-    },
-  ],
-  'priceConfigs': [
-    {
-      'channel': 'coingecko',
-      'native': 'ethereum',
-      'platform': 'ethereum',
-    },
-  ],
-  'symbol': 'ETH',
-  'decimals': 18,
-  'balance2FeeDecimals': 9,
   'impl': 'evm',
-  'isTestnet': true,
-  'defaultEnabled': true,
+  'chainId': '660279',
+  'id': 'evm--660279',
+  'name': 'Xai Network',
+  'symbol': 'XAI',
+  'code': 'xai',
+  'shortcode': 'xai',
+  'shortname': 'XAI',
+  'decimals': 18,
+  'feeMeta': {
+    'code': 'xai',
+    'decimals': 9,
+    'symbol': 'Gwei',
+  },
   'status': ENetworkStatus.LISTED,
-  'createdAt': '2023-08-10T00:29:24.951Z',
-  'updatedAt': '2023-08-10T00:29:24.951Z',
-  enabled: true,
-  feeSymbol: 'Gwei',
+  'isTestnet': false,
+  'extensions': {
+    'position': 1,
+    'isTokenSupported': true,
+    'isNFTEnabled': true,
+  },
+  'logoURI': 'https://x0pay.com/images/xai.png',
+  'defaultEnabled': true,
+  balance2FeeDecimals: 0,
+  priceConfigs: [],
+  explorers: [    {
+    'address': 'https://xaiscan.io/address/{address}',
+    'block': 'https://xaiscan.io/block/{block}',
+    'name': 'https://xaiscan.io/',
+    'transaction': 'https://xaiscan.io/tx/{transaction}',
+  },],
+  createdAt: '',
+  updatedAt: ''
 };
+
 const arbitrum: IServerNetwork = {
   'balance2FeeDecimals': 9,
   'chainId': '42161',
@@ -130,36 +120,36 @@ const arbitrum: IServerNetwork = {
   'createdAt': '2023-05-31T00:29:24.951Z',
   'updatedAt': '2023-05-31T00:29:24.951Z',
 };
-// const ethereum: IServerNetwork = {
-//   'impl': 'evm',
-//   'chainId': '1',
-//   'id': 'evm--1',
-//   'name': 'Ethereum',
-//   'symbol': 'ETH',
-//   'code': 'eth',
-//   'shortcode': 'eth',
-//   'shortname': 'ETH',
-//   'decimals': 18,
-//   'feeMeta': {
-//     'code': 'eth',
-//     'decimals': 9,
-//     'symbol': 'Gwei',
-//   },
-//   'status': ENetworkStatus.LISTED,
-//   'isTestnet': false,
-//   'extensions': {
-//     'position': 3,
-//     'isTokenSupported': true,
-//     'isNFTEnabled': true,
-//   },
-//   'logoURI': 'https://uni.onekey-asset.com/static/chain/eth.png',
-//   'defaultEnabled': true,
-//   balance2FeeDecimals: 0,
-//   priceConfigs: [],
-//   explorers: [],
-//   createdAt: '',
-//   updatedAt: ''
-// };
+const eth: IServerNetwork = {
+  'impl': 'evm',
+  'chainId': '1',
+  'id': 'evm--1',
+  'name': 'Ethereum',
+  'symbol': 'ETH',
+  'code': 'eth',
+  'shortcode': 'eth',
+  'shortname': 'ETH',
+  'decimals': 18,
+  'feeMeta': {
+    'code': 'eth',
+    'decimals': 9,
+    'symbol': 'Gwei',
+  },
+  'status': ENetworkStatus.LISTED,
+  'isTestnet': false,
+  'extensions': {
+    'position': 3,
+    'isTokenSupported': true,
+    'isNFTEnabled': true,
+  },
+  'logoURI': 'https://uni.onekey-asset.com/static/chain/eth.png',
+  'defaultEnabled': true,
+  balance2FeeDecimals: 0,
+  priceConfigs: [],
+  explorers: [],
+  createdAt: '',
+  updatedAt: ''
+};
 const bsc: IServerNetwork = {
   'impl': 'evm',
   'chainId': '56',
@@ -316,6 +306,7 @@ const sol: IServerNetwork = {
     // btc & btc fork
     xai,
     arbitrum,
+    eth,
     bsc,
     polygon,
     avalanche,
