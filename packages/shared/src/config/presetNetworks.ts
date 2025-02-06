@@ -130,7 +130,7 @@ const arbitrum: IServerNetwork = {
   'createdAt': '2023-05-31T00:29:24.951Z',
   'updatedAt': '2023-05-31T00:29:24.951Z',
 };
-const eth: IServerNetwork = {
+const ethereum: IServerNetwork = {
   'impl': 'evm',
   'chainId': '1',
   'id': 'evm--1',
@@ -316,7 +316,7 @@ const sol: IServerNetwork = {
     // btc & btc fork
     xai,
     arbitrum,
-    eth,
+    ethereum,
     bsc,
     polygon,
     avalanche,
