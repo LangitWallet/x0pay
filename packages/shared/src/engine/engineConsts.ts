@@ -180,20 +180,11 @@ export enum EAppSocketEvents {
 }
 
 export const getEnabledAccountDynamicNetworkIds = (): string[] => [
-  getNetworkIdsMap().eth,
-  getNetworkIdsMap().polygon,
-  getNetworkIdsMap().arbitrum,
-  getNetworkIdsMap().optimism,
+  getNetworkIdsMap().xai
 ];
 
 export const getEnabledNFTNetworkIds = (): string[] => [
-  getNetworkIdsMap().eth,
-  getNetworkIdsMap().optimism,
-  getNetworkIdsMap().bsc,
-  getNetworkIdsMap().polygon,
-  getNetworkIdsMap().arbitrum,
-  getNetworkIdsMap().avalanche,
-  getNetworkIdsMap().sol,
+  getNetworkIdsMap().xai
 ];
 
 function getSupportedImpls() {

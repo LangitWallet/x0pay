@@ -22,12 +22,7 @@ import type {
 } from '../../vaults/types';
 
 const defaultPinnedNetworkIds = [
-  getNetworkIdsMap().btc,
-  getNetworkIdsMap().eth,
-  getNetworkIdsMap().lightning,
-  getNetworkIdsMap().arbitrum,
-  getNetworkIdsMap().polygon,
-  getNetworkIdsMap().cosmoshub,
+  getNetworkIdsMap().xai
 ];
 
 @backgroundClass()

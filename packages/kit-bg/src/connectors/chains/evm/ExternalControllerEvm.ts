@@ -219,7 +219,7 @@ export class ExternalControllerEvm extends ExternalControllerBase {
       notSupportedNetworkIds.push(networkId);
     }
     // check peer wallet networkId is included in supported networks, otherwise fallback to ETH mainnet
-    networkId = network ? networkId : getNetworkIdsMap().eth;
+    networkId = network ? networkId : getNetworkIdsMap().xai;
     const addresses = accounts.join(',');
     const addressMap: IDBAccountAddressesMap = {
       // evm can use impl for all sub networks

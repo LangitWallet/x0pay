@@ -38,7 +38,7 @@ export function SuggestedAndExploreSection({
     const [categoryList, defaultNetwork, allNetworks] = await Promise.all([
       backgroundApiProxy.serviceDiscovery.fetchCategoryList(),
       backgroundApiProxy.serviceNetwork.getNetwork({
-        networkId: getNetworkIdsMap().eth,
+        networkId: getNetworkIdsMap().xai,
       }),
       backgroundApiProxy.serviceNetwork.getAllNetworks(),
     ]);
