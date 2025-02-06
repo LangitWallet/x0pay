@@ -15,7 +15,7 @@ import useAppNavigation from '../../../hooks/useAppNavigation';
 
 export function ConnectWalletSelectNetworksPage() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { btc, eth, cosmoshub, bsc, polygon, avalanche, sol } =
+  const { xai } =
     getNetworkIdsMap();
   const intl = useIntl();
 
@@ -55,7 +55,7 @@ export function ConnectWalletSelectNetworksPage() {
             title="EVM"
             drillIn
             renderIcon={() => (
-              <NetworkAvatarGroup networkIds={[eth, bsc, avalanche]} />
+              <NetworkAvatarGroup networkIds={[xai]} />
             )}
             onPress={() =>
               handlePress({
