@@ -33,7 +33,7 @@ export function buildDefaultAddAccountNetworks() {
     deriveType: IAccountDeriveTypesEvm;
   }[] = [
     {
-      networkId: networkIdsMap.eth,
+      networkId: networkIdsMap.xai,
       deriveType: 'default',
     },
     // {
