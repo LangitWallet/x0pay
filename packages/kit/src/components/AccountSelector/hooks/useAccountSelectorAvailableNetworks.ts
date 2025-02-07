@@ -32,6 +32,6 @@ export function useAccountSelectorAvailableNetworks({
 
   return {
     networkIds,
-    defaultNetworkId: '660279'//availableNetworksInfo?.defaultNetworkId,
+    defaultNetworkId: availableNetworksInfo?.defaultNetworkId,
   };
 }
